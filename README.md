@@ -16,6 +16,7 @@ public abstract void ExecuteResult(ControllerContext context)
 # ExecuteResult for ASP.NET MVC 6
 
   public virtual Task ExecuteResultAsync(ActionContext context)
+
   public virtual void ExecuteResult(ActionContext context)
 
 Two thing you might notice, the methods in MVC 6 are using virtual methods, and ActionContext instead of ControllerContext. There is nothing much to say about the contexts, they are very similar. By using virtual method there is no override constrains. It means that you can override either ExecuteResultAsync, ExecuteResult or both, but are not forced to.
