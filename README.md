@@ -2,6 +2,8 @@
 Test appp using 
 http://programminghave.blogspot.com/2015/04/custom-action-results-in-aspnet-5-vnext.html
 
+### What is an ActionResult?
+ActionResult is an abstract class that represents the result of an action method. The class itself inherits from System.Object, and only adds one additional abstract method: ExecuteResult, which is an abstract method that the derived classes of ActionResult will implement themselves.
 
 #### Why would I write a custom ActionResult
 Yes, good question. There is plenty supported in ASP.NET 5. But sometimes you ends up in a situation,
